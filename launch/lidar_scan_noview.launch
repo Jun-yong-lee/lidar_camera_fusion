@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find rplidar_ros)/launch/rplidar_a3.launch" />
+    <node name="camera_lidar_fusion" pkg="camera_lidar_fusion" type="lidar_scan.py" output="screen" />
+</launch>
